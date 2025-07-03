@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Halaman Utama -->
   <url>
     <loc>https://topresik.com/</loc>
-    <lastmod>2025-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://topresik.com/tentang.html</loc>
-    <lastmod>2025-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://topresik.com/index.html</loc>
   </url>
   <url>
     <loc>https://topresik.com/layanan.html</loc>
-    <lastmod>2025-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://topresik.com/artikel/1-mengatasi-wc-mampet.html</loc>
-    <lastmod>2025-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://topresik.com/tentang.html</loc>
   </url>
   <url>
-  <loc>https://topresik.com/ciri-septic-tank-penuh.html</loc>
-  <lastmod>2025-07-03</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-</url>
+    <loc>https://topresik.com/privacy.html</loc>
+  </url>
   <url>
-  <loc>https://topresik.com/sedot-wc.html</loc>
-  <lastmod>2025-07-03</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.95</priority>
-</url>
+    <loc>https://topresik.com/sedot-wc.html</loc>
+  </url>
+
+  <!-- Artikel -->
+  <url><loc>https://topresik.com/artikel/1-mengatasi-wc-mampet.html</loc></url>
+  <url><loc>https://topresik.com/artikel/2-biaya-sedot-wc.html</loc></url>
+  <url><loc>https://topresik.com/artikel/3-cara-merawat-septic-tank.html</loc></url>
+  <url><loc>https://topresik.com/artikel/4-penyebab-wc-mampet.html</loc></url>
+  <url><loc>https://topresik.com/artikel/5-tanda-septic-tank-penuh.html</loc></url>
+  <url><loc>https://topresik.com/artikel/6-jenis-kendaraan-sedot-wc.html</loc></url>
+  <url><loc>https://topresik.com/artikel/7-manfaat-sedot-wc-rutin.html</loc></url>
+  <url><loc>https://topresik.com/artikel/8-pilih-jasa-sedot-wc.html</loc></url>
+  <url><loc>https://topresik.com/artikel/9-manfaat-enzim-wc.html</loc></url>
+  <url><loc>https://topresik.com/artikel/10-apa-itu-sedot-wc.html</loc></url>
+  <url><loc>https://topresik.com/artikel/ciri-septic-tank-penuh.html</loc></url>
+  <url><loc>https://topresik.com/artikel/harga-sedot-wc-purwokerto.html</loc></url>
+  <url><loc>https://topresik.com/artikel/sedot-wc-murah.html</loc></url>
+
 </urlset>
