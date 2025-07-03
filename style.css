@@ -1,1 +1,89 @@
-Simulasi isi file untuk style.css
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background: #0055a5;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+}
+
+header img.logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto 1em;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1em 2em;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+}
+
+h1, h2 {
+  color: #0055a5;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5em;
+}
+
+.wa-button {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.wa-button:hover {
+  background: #128C7E;
+}
+
+blockquote {
+  border-left: 5px solid #0055a5;
+  margin: 1em 0;
+  padding-left: 1em;
+  color: #555;
+  font-style: italic;
+}
+
+.foto-truk {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1em;
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 2em;
+}
