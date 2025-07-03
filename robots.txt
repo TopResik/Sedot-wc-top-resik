@@ -1,1 +1,3 @@
-Simulasi isi file untuk robots.txt
+User-agent: *
+Allow: /
+Sitemap: https://topresik.com/sitemap.xml
