@@ -112,4 +112,46 @@ footer {
 .galeri-container img:hover {
   transform: scale(1.05);
 }
+/* Tombol Mengambang WhatsApp & Telepon */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-buttons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.floating-buttons a:hover {
+  transform: scale(1.1);
+}
+
+.floating-buttons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animasi Melayang */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
 
