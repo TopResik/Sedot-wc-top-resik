@@ -2,16 +2,22 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Memproses Pemesanan...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Google Tag -->
+  <title>Pesanan Berhasil - Top Resik</title>
+  <meta name="description" content="Terima kasih! Pesanan Anda telah kami terima. Tim kami akan segera menghubungi Anda.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17247172438"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17247172438');
+  </script>
+
+  <!-- Event snippet for Kunjungan halaman conversion page -->
+  <script>
     gtag('event', 'conversion', {
       'send_to': 'AW-17247172438/OGBFCIbUvOkaENbui6BA',
       'value': 1000.0,
@@ -21,45 +27,61 @@
 
   <style>
     body {
-      background-color: #f1faff;
+      font-family: Arial, sans-serif;
+      background-color: #f2f9ff;
+      margin: 0;
+      padding: 40px 20px;
       text-align: center;
-      font-family: sans-serif;
-      padding-top: 80px;
     }
-    .info {
-      display: inline-block;
-      background: #fff;
+
+    .success-box {
+      background: white;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #25d366;
+
+    .success-box h1 {
+      color: #2a7ae4;
+      margin-bottom: 10px;
     }
-    p {
+
+    .success-box p {
+      font-size: 18px;
       color: #333;
+      margin-bottom: 20px;
+    }
+
+    .wa-icon {
+      margin-top: 20px;
+    }
+
+    .wa-icon img {
+      width: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="info">
-    <h1>Pesanan Anda Diproses...</h1>
-    <p>Anda akan diarahkan ke WhatsApp untuk menyelesaikan pesanan.</p>
+  <div class="success-box">
+    <h1>✅ Pesanan Berhasil!</h1>
+    <p>Terima kasih telah memesan layanan kami.</p>
+    <p>Tim <strong>Top Resik</strong> akan segera menghubungi Anda melalui WhatsApp.</p>
+    <p>Anda akan diarahkan secara otomatis dalam beberapa detik...</p>
+
+    <div class="wa-icon">
+      <a href="https://wa.me/6283861420051" target="_blank">
+        <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="Chat WhatsApp" />
+      </a>
+    </div>
   </div>
 
+  <!-- Redirect otomatis ke WhatsApp dalam 5 detik -->
   <script>
-    // Baca parameter admin
-    const urlParams = new URLSearchParams(window.location.search);
-    const admin = urlParams.get('admin');
-
-    // Nomor WA berdasarkan admin
-    let nomor = '6283861420051'; // default admin 1
-    if (admin === '2') nomor = '6283195234370';
-
-    // Redirect ke WA setelah delay
-    setTimeout(() => {
-      window.location.href = `https://wa.me/${nomor}?text=Halo%20saya%20mau%20pesan%20layanan%20Sedot%20WC`;
-    }, 1500);
+    setTimeout(function () {
+      window.location.href = "https://wa.me/6283861420051";
+    }, 5000);
   </script>
 </body>
 </html>
