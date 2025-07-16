@@ -2,67 +2,10 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
+  <title>Memproses Pemesanan...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pesanan Berhasil – Top Resik</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4fdf7;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    .container {
-      max-width: 600px;
-      margin: 100px auto;
-      background-color: white;
-      padding: 40px 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease-in-out;
-    }
-    h1 {
-      color: #2ecc71;
-      font-size: 28px;
-    }
-    p {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 15px;
-    }
-    .checkmark {
-      font-size: 60px;
-      color: #2ecc71;
-      margin-bottom: 20px;
-    }
-    .redirect {
-      color: #555;
-      margin-top: 20px;
-      font-size: 14px;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="checkmark">✔</div>
-    <h1>Pesanan Anda Telah Kami Terima!</h1>
-    <p>Terima kasih telah memesan layanan <strong>Top Resik</strong>.</p>
-    <p>Tim kami akan segera menghubungi Anda melalui WhatsApp.</p>
-    <div class="redirect">Anda akan diarahkan ke WhatsApp dalam 5 detik...</div>
-  </div>
-
-  <!-- Redirect otomatis -->
-  <script>
-    setTimeout(function() {
-      window.location.href = "https://wa.me/6283861420051";
-    }, 5000);
-  </script>
-
-  <!-- Tag Google Ads -->
+  
+  <!-- Google Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17247172438"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -70,10 +13,53 @@
     gtag('js', new Date());
     gtag('config', 'AW-17247172438');
     gtag('event', 'conversion', {
-        'send_to': 'AW-17247172438/OGBFCIbUvOkaENbui6BA',
-        'value': 1000.0,
-        'currency': 'IDR'
+      'send_to': 'AW-17247172438/OGBFCIbUvOkaENbui6BA',
+      'value': 1000.0,
+      'currency': 'IDR'
     });
+  </script>
+
+  <style>
+    body {
+      background-color: #f1faff;
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 80px;
+    }
+    .info {
+      display: inline-block;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #25d366;
+    }
+    p {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">
+    <h1>Pesanan Anda Diproses...</h1>
+    <p>Anda akan diarahkan ke WhatsApp untuk menyelesaikan pesanan.</p>
+  </div>
+
+  <script>
+    // Baca parameter admin
+    const urlParams = new URLSearchParams(window.location.search);
+    const admin = urlParams.get('admin');
+
+    // Nomor WA berdasarkan admin
+    let nomor = '6283861420051'; // default admin 1
+    if (admin === '2') nomor = '6283195234370';
+
+    // Redirect ke WA setelah delay
+    setTimeout(() => {
+      window.location.href = `https://wa.me/${nomor}?text=Halo%20saya%20mau%20pesan%20layanan%20Sedot%20WC`;
+    }, 1500);
   </script>
 </body>
 </html>
