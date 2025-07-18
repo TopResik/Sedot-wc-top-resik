@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,14 +10,46 @@
   <meta name="author" content="Top Resik" />
   <link rel="canonical" href="https://topresik.com/" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Tag (gtag.js) - Akun 1 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17356216230"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17356216230');
+  </script>
+
+  <!-- Google Tag (gtag.js) - Akun 2 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17247172438"></script>
+  <script>
+    gtag('config', 'AW-17247172438');
+  </script>
+
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #004c8c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 8px;
+      text-decoration: none;
+    }
     .wa-button {
       display: inline-flex;
       align-items: center;
       background-color: #25D366;
       color: white;
       padding: 10px 16px;
-      margin: 8px 5px 8px 0;
+      margin: 10px 5px;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
@@ -30,11 +63,30 @@
     .wa-button:hover {
       background-color: #1ebe5d;
     }
+    .float-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .float-button a {
+      display: block;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .layanan, .order, .testimoni, .foto-truk, .artikel, .info {
+      padding: 20px;
+    }
+    .foto-truk img {
+      width: 100%;
+      max-width: 400px;
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Sedot WC Top Resik" class="logo">
+    <img src="logo.png" alt="Logo Sedot WC Top Resik" style="max-height: 80px;">
     <h1>SEDOT WC TOP RESIK</h1>
     <p>Layanan cepat, bersih dan tuntas – Harga transparan dan bergaransi</p>
     <nav>
@@ -45,7 +97,9 @@
       <a href="artikel.html">Artikel</a> |
       <a href="privacy.html">Privasi</a>
     </nav>
-  </header>  <main>
+  </header>
+
+  <main>
     <section class="layanan">
       <h2>Layanan Kami</h2>
       <ul>
@@ -55,50 +109,62 @@
         <li>Wastafel Mampet</li>
         <li>Layanan 24 Jam</li>
       </ul>
-    </section><section class="order">
-  <h2>Order Sekarang</h2>
-  <a href="sukses.html" class="wa-button">
-    <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WA"> WhatsApp Admin 1
-  </a>
-  <a href="https://wa.me/6283195234370" class="wa-button" target="_blank">
-    <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WA"> WhatsApp Admin 2
-  </a>
-</section>
+    </section>
 
-<section class="testimoni">
-  <h2>Testimoni Pelanggan</h2>
-  <blockquote>"Layanan cepat, pegawai ramah."</blockquote>
-  <blockquote>"Harga terjangkau dan hasil bersih."</blockquote>
-</section>
+    <section class="order">
+      <h2>Order Sekarang</h2>
+      <a href="https://wa.me/6283861420051" class="wa-button" target="_blank">
+        <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WA"> WhatsApp Admin 1
+      </a>
+      <a href="https://wa.me/6283195234370" class="wa-button" target="_blank">
+        <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WA"> WhatsApp Admin 2
+      </a>
+    </section>
 
-<section class="foto-truk">
-  <h2>Armada Operasional</h2>
-  <img src="truk.jpg" alt="Mobil Sedot WC Top Resik" class="foto-truk"><br>
-  <img src="alat-sedot.jpg" alt="Peralatan Sedot WC" class="foto-truk">
-</section>
+    <section class="testimoni">
+      <h2>Testimoni Pelanggan</h2>
+      <blockquote>"Layanan cepat, pegawai ramah."</blockquote>
+      <blockquote>"Harga terjangkau dan hasil bersih."</blockquote>
+    </section>
 
-<section class="artikel">
-  <h2>Artikel Terbaru</h2>
-  <ul>
-    <li><a href="artikel/1-mengatasi-wc-mampet.html">Cara Mengatasi WC Mampet Sendiri</a></li>
-    <li><a href="artikel/2-biaya-sedot-wc.html">Berapa Biaya Sedot WC di Banyumas?</a></li>
-    <li><a href="artikel/3-cara-merawat-septic-tank.html">Cara Merawat Septic Tank Agar Tidak Cepat Penuh</a></li>
-    <li><a href="artikel/4-penyebab-wc-mampet.html">Penyebab WC Mampet yang Sering Terjadi</a></li>
-    <li><a href="artikel/5-tanda-septic-tank-penuh.html">Tanda-Tanda Septic Tank Sudah Penuh</a></li>
-  </ul>
-</section>
+    <section class="foto-truk">
+      <h2>Armada Operasional</h2>
+      <img src="truk.jpg" alt="Mobil Sedot WC Top Resik" class="foto-truk"><br>
+      <img src="alat-sedot.jpg" alt="Peralatan Sedot WC" class="foto-truk">
+    </section>
 
-<section class="info">
-  <h2>Info Kontak</h2>
-  <p>📍 Alamat: Jl. Klipah, Desa Kedungrandu, Patikraja, Banyumas</p>
-  <p>📞 WhatsApp: +62 838-6142-0051</p>
-  <p>📞 WhatsApp: +62 831-9523-4370</p>
-  <p>📦 Area Layanan: Banyumas, Purbalingga, Cilacap, Kebumen, Banjarnegara</p>
-  <p>📈 <a href="https://www.google.com/maps/place/Jl.+Klipah,+Desa+kedungrandu,+Patikraja,+Banyumas" target="_blank">Lihat di Google Maps</a></p>
-</section>
+    <section class="artikel">
+      <h2>Artikel Terbaru</h2>
+      <ul>
+        <li><a href="artikel/1-mengatasi-wc-mampet.html">Cara Mengatasi WC Mampet Sendiri</a></li>
+        <li><a href="artikel/2-biaya-sedot-wc.html">Berapa Biaya Sedot WC di Banyumas?</a></li>
+        <li><a href="artikel/3-cara-merawat-septic-tank.html">Cara Merawat Septic Tank Agar Tidak Cepat Penuh</a></li>
+        <li><a href="artikel/4-penyebab-wc-mampet.html">Penyebab WC Mampet yang Sering Terjadi</a></li>
+        <li><a href="artikel/5-tanda-septic-tank-penuh.html">Tanda-Tanda Septic Tank Sudah Penuh</a></li>
+      </ul>
+    </section>
 
-  </main>  <footer>
-    <p>&copy; 2025 Sedot WC Top Resik | <a href="privacy.html">Kebijakan Privasi</a></p>
+    <section class="info">
+      <h2>Info Kontak</h2>
+      <p>📍 Alamat: Jl. Klipah, Desa Kedungrandu, Patikraja, Banyumas</p>
+      <p>📞 WhatsApp: +62 838-6142-0051</p>
+      <p>📞 WhatsApp: +62 831-9523-4370</p>
+      <p>📦 Area Layanan: Banyumas, Purbalingga, Cilacap, Kebumen, Banjarnegara</p>
+      <p>📈 <a href="https://www.google.com/maps/place/Jl.+Klipah,+Desa+kedungrandu,+Patikraja,+Banyumas" target="_blank">Lihat di Google Maps</a></p>
+    </section>
+  </main>
+
+  <div class="float-button">
+    <a href="https://wa.me/6283861420051" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Admin" style="border-radius:50%;">
+    </a>
+    <a href="tel:+6283861420051">
+      <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Telepon" style="border-radius:50%;">
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sedot WC Top Resik | <a href="privacy.html" style="color:white;">Kebijakan Privasi</a></p>
   </footer>
 </body>
 </html>
