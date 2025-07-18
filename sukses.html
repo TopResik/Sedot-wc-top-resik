@@ -7,25 +7,26 @@
   <meta name="description" content="Terima kasih! Pesanan Anda telah kami terima. Tim kami akan segera menghubungi Anda.">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Google tag (gtag.js) akun 1 -->
+  <!-- Google Ads Tag - Akun 1 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17247172438"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17247172438');
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17247172438/OGBFCIbUvOkaENbui6BA',
+      'value': 1000.0,
+      'currency': 'IDR'
+    });
   </script>
 
-  <!-- Google tag (gtag.js) akun 2 -->
+  <!-- Google Ads Tag - Akun 2 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17356216230"></script>
   <script>
     gtag('config', 'AW-17356216230');
-  </script>
-
-  <!-- Event snippet (Konversi) -->
-  <script>
     gtag('event', 'conversion', {
-      'send_to': 'AW-17247172438/OGBFCIbUvOkaENbui6BA',
+      'send_to': 'AW-17356216230/dPgeCNWa_PAaEKavi9RA',
       'value': 1000.0,
       'currency': 'IDR'
     });
@@ -60,40 +61,39 @@
       margin-bottom: 20px;
     }
 
-    .wa-icon {
-      margin-top: 20px;
-    }
-
-    .wa-icon a {
-      display: inline-block;
+    .wa-button {
+      display: inline-flex;
+      align-items: center;
       background-color: #25D366;
       color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 10px 16px;
+      margin-top: 10px;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
     }
 
-    .wa-icon a img {
-      vertical-align: middle;
-      margin-right: 8px;
+    .wa-button img {
       height: 24px;
+      margin-right: 10px;
+    }
+
+    .wa-button:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
   <div class="success-box">
     <h1>✅ Pesanan Berhasil!</h1>
-    <p>Terima kasih telah memesan layanan kami.</p>
-    <p>Tim <strong>Top Resik</strong> akan segera menghubungi Anda melalui WhatsApp.</p>
-    <p>Jika belum diarahkan otomatis, silakan klik tombol di bawah ini:</p>
-
-    <div class="wa-icon">
-      <a href="https://wa.me/6283861420051" target="_blank">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WA"> Chat WhatsApp Sekarang
-      </a>
-    </div>
+    <p>Terima kasih telah memesan layanan <strong>Top Resik</strong>.</p>
+    <p>Tim kami akan segera menghubungi Anda melalui WhatsApp.</p>
+    <p>Klik tombol di bawah ini untuk langsung chat admin:</p>
+    <a class="wa-button" href="https://wa.me/6283861420051" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"> WhatsApp Admin
+    </a>
   </div>
 </body>
 </html>
