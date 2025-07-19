@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -88,6 +87,7 @@ footer {
   margin-top: 2em;
 }
 
+/* Galeri */
 .galeri {
   padding: 20px;
   background-color: #f7f7f7;
@@ -112,6 +112,7 @@ footer {
 .galeri-container img:hover {
   transform: scale(1.05);
 }
+
 /* Tombol Mengambang WhatsApp & Telepon */
 .floating-buttons {
   position: fixed;
@@ -154,4 +155,3 @@ footer {
     transform: translateY(-6px);
   }
 }
-
