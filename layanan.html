@@ -4,57 +4,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layanan | Sedot WC Top Resik</title>
+  <meta name="description" content="Daftar layanan Sedot WC Top Resik: sedot WC penuh, saluran mampet, septic tank, dan layanan darurat 24 jam. Cepat, bersih, dan bergaransi.">
   <link rel="stylesheet" href="style.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17247172438"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  gtag('config', 'AW-17247172438');
-</script>
-  <!-- Event snippet for Kunjungan halaman conversion page -->
-<script>
-  gtag('event', 'conversion', {
+  <!-- Google Ads Tag - Akun 1 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17356216230"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17356216230');
+  </script>
+
+  <!-- Google Ads Tag - Akun 2 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17247172438"></script>
+  <script>
+    gtag('config', 'AW-17247172438');
+  </script>
+
+  <!-- Event Konversi (khusus halaman layanan) -->
+  <script>
+    gtag('event', 'conversion', {
       'send_to': 'AW-17247172438/OGBFCIbUvOkaENbui6BA',
       'value': 1000.0,
       'currency': 'IDR'
-  });
-</script>
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0055a5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header .logo {
+      width: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 30px;
+      color: #666;
+    }
+
+    /* Tombol WA & Telp Mengambang */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .floating-buttons a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      animation: float 3s ease-in-out infinite;
+    }
+    .floating-buttons a:hover {
+      transform: scale(1.1);
+    }
+    .floating-buttons img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-        <img src="logo.png" alt="Logo Sedot WC Top Resik" class="logo">
+    <img src="logo.png" alt="Logo Sedot WC Top Resik" class="logo">
     <h1>Layanan Kami</h1>
     <nav>
-       <a href="index.html">Beranda</a> |
+      <a href="index.html">Beranda</a> |
       <a href="tentang.html">Tentang Kami</a> |
       <a href="layanan.html">Layanan</a> |
-      <a href="galeri.html">Galeri</a>
+      <a href="galeri.html">Galeri</a> |
+      <a href="artikel.html">Artikel</a> |
       <a href="privacy.html">Privasi</a>
     </nav>
   </header>
+
   <main>
+    <h2>Daftar Layanan</h2>
     <ul>
-      <li>✅ Sedot WC penuh & mampet</li>
-      <li>✅ Service saluran air buntu</li>
-      <li>✅ Perbaikan & pembersihan septic tank</li>
-      <li>✅ Layanan darurat 24 jam</li>
+      <li>✅ Sedot WC penuh & mampet (tuntas tanpa bau)</li>
+      <li>✅ Service saluran air buntu & wastafel mampet</li>
+      <li>✅ Perbaikan dan pembersihan septic tank</li>
+      <li>✅ Layanan darurat 24 jam siap ke lokasi</li>
+      <li>✅ Area layanan: Banyumas, Purwokerto, Purbalingga, Cilacap, Banjarnegara</li>
     </ul>
+
+    <h3>Pesan Sekarang</h3>
+    <a href="https://wa.me/6283861420051" class="wa-button">📲 WhatsApp Admin</a>
   </main>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/6283861420051" target="_blank" title="WhatsApp Admin">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+    </a>
+    <a href="tel:6283861420051" title="Telepon Sekarang">
+      <img src="https://img.icons8.com/fluency/48/000000/phone.png" alt="Telepon" />
+    </a>
+  </div>
+
   <footer>
-    <p>&copy; 2025 Sedot WC Top Resik</p>
+    <p>&copy; 2025 Sedot WC Top Resik | <a href="privacy.html">Kebijakan Privasi</a></p>
   </footer>
-</body>
-  <!-- Tombol WhatsApp & Telepon Mengambang -->
-<div class="floating-buttons">
-  <a href="https://wa.me/6283861420051" target="_blank" class="wa-button" title="Chat WhatsApp">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
-  </a>
-  <a href="tel:6283861420051" target="_blank" class="tel-button" title="Telepon Sekarang">
-    <img src="https://img.icons8.com/fluency/48/000000/phone.png" alt="Telepon" />
-  </a>
-</div>
 </body>
 </html>
